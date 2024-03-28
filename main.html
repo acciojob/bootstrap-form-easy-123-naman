@@ -12,39 +12,60 @@
     <form class="row g-3" style="margin: 1%;">
         <div class="col-md-4 form-group">
             <label for="first-name-input" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="first-name-input" required title="First name required">
+            <input type="text" class="form-control" id="first-name-input" required>
+            <div class="valid-feedback">
+                First name required
+              </div>
         </div>
         <div class="col-md-4 form-group">
             <label for="last-name-input" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="last-name-input" required title="Last name required">
+            <input type="text" class="form-control" id="last-name-input" required>
+            <div class="valid-feedback">
+                Last name required
+            </div>
         </div>
         <div class="col-md-4 form-group">
             <label for="email-input" v>Email Address</label>
-            <input type="email" class="form-control" id="email-input" placeholder="xyz@gmail.com" required title="Email required">
+            <input type="email" class="form-control" id="email-input" placeholder="xyz@gmail.com" required>
+            <div class="valid-feedback">
+                Email required
+            </div>
         </div>
         <div class="col-md-6 form-group">
             <label for="college-input" class="form-label">College</label>
-            <input type="text" class="form-control" id="college-input" placeholder="College name" required title="Please provide a valid College.">
+            <input type="text" class="form-control" id="college-input" placeholder="College name" required>
+            <div class="valid-feedback">
+                Please provide a valid College.
+            </div>
         </div>
         <div class="col-md-3 form-group">
             <label for="grad-year-select" class="form-label">Graduation Year</label>
-            <select id="grad-year-select" class="form-select" required title="Please provide a valid Graduation Year.">
+            <select id="grad-year-select" class="form-select" required>
                 <option selected>Choose...</option>
                 <option>2020</option>
                 <option>2021</option>
                 <option>2022</option>
                 <option>2023</option>
             </select>
+            <div class="valid-feedback">
+                Please provide a valid Graduation Year.
+            </div>
         </div>
         <div class="col-md-3 form-group">
             <label for="roll-no-input" class="form-label">Roll No.</label>
-            <input type="text" class="form-control" id="roll-no-input" required title="Please provide a valid Roll no.">
+            <input type="text" class="form-control" id="roll-no-input" required>
+            <div class="valid-feedback">
+                Please provide a valid Roll no.
+            </div>
         </div>
         <div class="col-12">
             <div class="form-check form-group">
                 <label for="conditions-checkbox">Agree to terms and conditions</label>
                 <input class="form-check-input is-invalid" type="checkbox" id="conditions-checkbox"
                     aria-describedby="invalidCheck3Feedback" required>
+            </div>
+            <div class="valid-feedback">
+                You must agree before submiting
             </div>
         </div>
         <button type="submit" class="btn btn-primary" style="width: 10%;">Sign in</button>
